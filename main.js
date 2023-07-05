@@ -9,3 +9,4 @@
 
 const heading = document.querySelector('h1');
 heading.innerText='Charles';
+heading.style.textAlign='center';
