@@ -1,9 +1,5 @@
-function counter() {
-    for (i=1;i<=60;i++){
-        ;
-    }    
-}
-counter()
+
+let counter =0
 // Targeting elements
 const timer=document.querySelector('#timer')
 const startBtn=document.querySelector('#start-btn')
@@ -15,5 +11,8 @@ startBtn.addEventListener('click',start)
 
 // functions for handle events
 function start(){
-    alert('hello World')
+   setTimeout(() => {
+    counter++
+    timer.innerText(00:00:{counter})
+   }, timeout);
 }
