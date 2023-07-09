@@ -1,5 +1,5 @@
 
-let counter =0
+var counter =0
 // Targeting elements
 const timer=document.querySelector('#timer')
 const startBtn=document.querySelector('#start-btn')
@@ -8,11 +8,20 @@ const resetBtn =document.querySelector('#reset-btn')
 
 // Event handlers
 startBtn.addEventListener('click',start)
+stopBtn.addEventListener('click',stop)
 
 // functions for handle events
 function start(){
-   setTimeout(() => {
+    setInterval(Counter, 1000)
+}
+
+function Counter(){
     counter++
-    timer.innerText(00:00:{counter})
-   }, timeout);
+    console.log(counter)
+}
+// function stop(){
+//     clearTimeout()
+// }
+function(){
+   console.log() 
 }
