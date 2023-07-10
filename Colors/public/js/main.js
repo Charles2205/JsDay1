@@ -1,6 +1,48 @@
-const btnClick = document.body.querySelector('#btn-click');
-const numCheck = document.querySelector('#check')
-btnClick.addEventListener('click',randomNumbers);
+// const btnClick = document.body.querySelector('#btn-click');
+// const numCheck = document.querySelector('#check')
+// btnClick.addEventListener('click',randomNumbers);
+
+
+// Using an array method
+const colors=['red', 'blue', 'green', 'pink','orange', 'yellow']
+// accessing the button
+ const btnClick = document.body.querySelector('#btn-click');
+//  function to generate random number
+function generateRandomNumber(colors){
+    return Math.floor(Math.random()*colors.length)
+}
+// add click eventlistener to the button
+btnClick.addEventListener('click',function(){
+    const randomNum=generateRandomNumber(colors)
+    colors[randomNum]
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // function randomNumbers(){
 //     const randomNum=Math.floor(Math.random()*5)
@@ -48,36 +90,36 @@ btnClick.addEventListener('click',randomNumbers);
 // }
 
 // Using normal function with SwitchCase
-function randomNumbers() {
-    const randomNum=Math.floor(Math.random()*6)
-    switch (randomNum) {
-        case 0:
-            numCheck.innerText = 'blue'
-            document.body.style.backgroundColor='Blue'
-            break;
-        case 1:
-            numCheck.innerText = 'Green'
-            document.body.style.backgroundColor='green'
-            break;
-        case 2:
-            numCheck.innerText = 'Yellow'
-            document.body.style.backgroundColor='Yellow'
-            break;
-        case 3:
-            numCheck.innerText = 'Pink'
-            document.body.style.backgroundColor='Pink'
-            break;
-        case 4:
-                numCheck.innerText = 'Orange'
-                document.body.style.backgroundColor='orange'
-                break;
-        case 5:
-                numCheck.innerText = 'Red'
-                document.body.style.backgroundColor='Red'
-                break;
+// function randomNumbers() {
+//     const randomNum=Math.floor(Math.random()*6)
+//     switch (randomNum) {
+//         case 0:
+//             numCheck.innerText = 'blue'
+//             document.body.style.backgroundColor='Blue'
+//             break;
+//         case 1:
+//             numCheck.innerText = 'Green'
+//             document.body.style.backgroundColor='Green'
+//             break;
+//         case 2:
+//             numCheck.innerText = 'Yellow'
+//             document.body.style.backgroundColor='Yellow'
+//             break;
+//         case 3:
+//             numCheck.innerText = 'Pink'
+//             document.body.style.backgroundColor='Pink'
+//             break;
+//         case 4:
+//                 numCheck.innerText = 'Orange'
+//                 document.body.style.backgroundColor='Orange'
+//                 break;
+//         case 5:
+//                 numCheck.innerText = 'Red'
+//                 document.body.style.backgroundColor='Red'
+//                 break;
 
-        default:
-            document.body.style.backgroundColor='Red'
-            break;
-}
-}
+//         default:
+//             document.body.style.backgroundColor='Red'
+//             break;
+// }
+// }
