@@ -14,7 +14,8 @@ function generateRandomNumber(colors){
 // add click eventlistener to the button
 btnClick.addEventListener('click',function(){
     const randomNum=generateRandomNumber(colors)
-    colors[randomNum]
+   let  generatedColor=colors[randomNum]
+   document.body.style.backgroundColor=generatedColor
 })
 
 
